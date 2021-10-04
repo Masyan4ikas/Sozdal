@@ -1,0 +1,18 @@
+// Даны переменные A, B, C. Изменить их значения, переместив содержимое A в C, C — в B, B — в A, и вывести новые значения переменных A, B, C.
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    setlocale(0, "rus");
+    double a=0,b=0,c=0,d=0;
+    cout << "Введите значение А, B, C через пробел: \n";
+    cout << "A, B, C = \t";
+    cin >> a >> b >> c;
+    d = a;
+    a = c;
+    c = b;
+    b = d;
+    cout << "A = " << a << " B = " << b << " C = " << c;
+}
