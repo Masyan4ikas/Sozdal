@@ -1,0 +1,22 @@
+// Найти значение функции y = 3x6 − 6x2 − 7 при данном значении x
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("введите х: ");
+            double x = double.Parse(Console.ReadLine());
+            double y=3*Math.Pow(x,6) - 6*Math.Pow(x,2) - 7;
+            Console.WriteLine("y= "+y);
+            Console.Read();
+        }
+    }
+}
