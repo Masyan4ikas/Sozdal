@@ -1,0 +1,16 @@
+// Найти значение функции y = 3x6 − 6x2 − 7 при данном значении x
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() 
+{
+    setlocale(0, "rus");
+    double x=0;
+    cout << "Найдем значение функции y = 3x^6 − 6x^2 − 7\n";
+    cout << "Введите значение x: \n";
+    cout << "x = \t";
+    cin >> x;
+    cout << "Значение функции y = 3x^6 − 6x^2 − 7 = " << 3*pow(x,6)-6*pow(x,2)-7;
+}
