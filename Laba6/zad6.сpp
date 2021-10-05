@@ -1,0 +1,19 @@
+// Дано число A. Вычислить A8 , используя вспомогательную переменную и три операции умножения.
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() 
+{
+    setlocale(0, "rus");
+    double a=0, b=0;
+    cout << "Найдем значение A^8\n";
+    cout << "Введите значение A: \n";
+    cout << "A = ";
+    cin >> a;
+    b = a*a;
+    b = b*b;
+    b = b*b;
+    cout << "Значение A^8 = " << b;
+}
