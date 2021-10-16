@@ -2,33 +2,34 @@
 // ОЧеень сложно...
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 using namespace std;
 
 int main()
 {
- int x1, x2, x3, y1, y2, y3 = 0;
- 
- double s, p, a, b, c, pp = 0;
- 
- cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
- 
- a = sqrt (pow(float(x2 - x1),2)+pow(float(y2 - y1), 2));
- b = sqrt (pow(float(x3 - x2),2)+pow(float(y3 - y2), 2));
- c = sqrt (pow(float(x3 - x1),2)+pow(float(y3 - y1), 2));
- p = a + b + c;
- pp = p/2;
- s = sqrt(pp * (pp - a)*(pp - b)*(pp - c));
- 
- cout << "S = " <<s << endl;
- cout << "P = " << p;
- 
- cin.get();
- cin.get();
- 
- return 0;
+    setlocale(0, "rus");
+    double x1=0,y1=0,x2=0,y2=0,x3=0,y3=0,a=0,b=0,c=0,p=0;
+    cout << "Введите координаты первой точки треугольника через пробел:\n";
+    cout << "(x1, y1) = \t";
+    cin >> x1 >> y1;
+    cout << "Введите координаты второй точки треугольника через пробел:\n";
+    cout << "(x2, y2) = \t";
+    cin >> x2 >> y2;
+    cout << "Введите координаты третьей точки треугольника через пробел:\n";
+    cout << "(x3, y3) = \t";
+    cin >> x3 >> y3;
+    a = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    b = sqrt(pow(x3-x2,2)+pow(y3-y2,2));
+    c = sqrt(pow(x3-x1,2)+pow(y3-y1,2));
+    if (a>(b+c) or b>(a+c) or c>(a+b)){
+        cout << "Ошибка: такого треугольника не существует";
+    }
+    else {
+        cout << "Периметр треугольника: " << a+b+c << "\n";
+        p = (a+b+c)/2;
+        cout << "Площадь треугольника: " << sqrt(p*(p-a)*(p-b)*(p-c));
+    }
 }
-
 
 
 
