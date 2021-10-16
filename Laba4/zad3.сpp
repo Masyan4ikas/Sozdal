@@ -1,18 +1,17 @@
-/* Даны два числа a и b. Найти их среднее арифметическое: (a + b)/2.
-*/
+/* Даны два числа a и b. Найти их среднее арифметическое: (a + b)/2. */
 
-#include <stdio.h>
- 
-int main(void)
+#include <iostream>
+using namespace std;
+
+int main()
 {
-    float a, b;
-    printf("a:");
-    scanf ("%f", &a);
- 
-    printf("b:");
-    scanf ("%f", &b);
- 
-    printf("%f\n",(a+b)/2);
- 
-    return 0;
+    setlocale(0, "rus");
+    float a = 0, b = 0;
+    cout << "Введите первое число:\n";
+    cout << "a = \t";
+    cin >> a;
+    cout << "Введите второе число:\n";
+    cout << "b = \t";
+    cin >> b;
+    cout << "Среднее арфиметическое двух чисел: (a+b)/2 = (" << a << "+" << b << ")/2 = " << (a+b)/2; 
 }
