@@ -1,23 +1,20 @@
-/*Даны два ненулевых числа. Найти сумму, разность, произведение и
-частное их модулей.
-*/
+/* Даны два ненулевых числа. Найти сумму, разность, произведение ичастное их модулей. */
 
-#include <stdio.h>
-#include <math.h>
- 
-int main(void)
+#include <iostream>
+using namespace std;
+
+int main()
 {
-    float a, b;
-    printf("a:");
-    scanf ("%f", &a);
- 
-    printf("b:");
-    scanf ("%f", &b);
- 
-    printf("%f\n",abs(a)+abs(b));
-    printf("%f\n",abs(a)-abs(b));
-    printf("%f\n",abs(a)*abs(b));
-    printf("%f\n",abs(a)/abs(b));
- 
-    return 0;
+    setlocale(0, "rus");
+    float a = 0, b = 0;
+    cout << "Введите первое число, неравное нулю:\n";
+    cout << "a = \t";
+    cin >> a;
+    cout << "Введите второе число, неравное нулю:\n";
+    cout << "b = \t";
+    cin >> b;
+    cout << "Сумма модулей чисел: |a|+|b| = " << abs(a)+abs(b) << "\n";
+    cout << "Разность модулей чисел: |a|-|b|  = " << abs(a)-abs(b) << "\n";
+    cout << "Произведение модулей чисел: |a|*|b| = " << abs(a)*abs(b) << "\n";
+    cout << "Частное модулей чисел: |a|/|b| = " << abs(a)/abs(b);
 }
