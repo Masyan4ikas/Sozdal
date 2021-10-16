@@ -1,14 +1,15 @@
 /*Дан диаметр окружности d. Найти ее длину L = π·d.В качестве значения π использовать 3.14.*/
 
-#include <stdio.h>
-int main(void)
+#include <iostream>
+using namespace std;
+
+int main()
 {
-    float d;
-    printf("d:");
-    scanf ("%f", &d);
- 
-    float L= 3.14*d;
-    printf("L:%f\n",L);
- 
-    return 0;
+    setlocale(0, "rus");
+    float d = 0, l = 0, pi = 3.14;
+    cout << "Введите диаметр окружности:\n";
+    cout << " d = \t";
+    cin >> d;
+    l = d*pi;
+    cout << "Длина окружности: L = π * d = 3,14 * " << d << "=" << l;
 }
