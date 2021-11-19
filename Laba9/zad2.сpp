@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    setlocale(0,"rus");
+    int k = 0;
+    cout << "Введите значение K(1-365): ";
+    cin >> k;
+    if (k<1 or k>365){
+        cout << "Ошибка! Значение не принадлежит промежутку";
+    }
+    cout << "Номер дня недели K дня: " << k%7;
+}
