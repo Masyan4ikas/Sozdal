@@ -1,0 +1,15 @@
+//Даны целые числа a, b, c. Проверить истинность высказывания: «Существует треугольник со сторонами a, b, c».
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    setlocale(LC_ALL, "Rus");
+    int a, b, c;
+    cout<<"Введите числа А, В и С ";
+    cin>>a>>b>>c;
+    if ((a+b>c)&&(a+c>b)&&(b+c>a))
+        cout<<"Истина";
+    else cout<<"Ложь";
+    return 0;
+}
