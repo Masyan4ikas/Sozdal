@@ -1,4 +1,4 @@
-Лабораторная 18 (ВВП)
+//Лабораторная 18 (ВВП)
 #include <iostream>
 #include <cmath>
 #include <string>
